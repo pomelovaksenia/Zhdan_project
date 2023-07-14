@@ -1,6 +1,6 @@
 package system_pac.model;
 
-public class counter {
+public class Counter {
     private static long counter;
 
     public static synchronized Long next(){

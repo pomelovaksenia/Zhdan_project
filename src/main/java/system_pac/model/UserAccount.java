@@ -18,7 +18,7 @@ public class UserAccount {
     }
 
     public UserAccount(String name, String surname, Integer shift) {
-        this.id = counter.next();
+        this.id = Counter.next();
         this.name = name;
         this.surname = surname;
         this.shift = shift;
