@@ -1,16 +1,19 @@
 package system_pac.model;
 
 import javax.xml.crypto.Data;
+import java.util.Date;
 
 public class QuestionPosts {
+    String question;
     String answer;
     UserAccount account;
-    Data data;
+    Date date;
 
-    public QuestionPosts(String answer, UserAccount account, Data data) {
+    public QuestionPosts(String question, String answer, /*UserAccount account,*/ Date date) {
+        this.question = question;
         this.answer = answer;
-        this.account = account;
-        this.data = data;
+     /*   this.account = account;*/
+        this.date = date;
     }
 
     public String getAnswer() {
@@ -21,7 +24,8 @@ public class QuestionPosts {
         return account;
     }
 
-    public Data getData() {
-        return data;
+    public Date getData() {
+        return date;
     }
+
 }

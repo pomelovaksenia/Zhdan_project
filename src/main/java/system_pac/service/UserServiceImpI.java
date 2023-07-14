@@ -1,8 +1,9 @@
 package system_pac.service;
 
+import org.springframework.stereotype.Service;
 import system_pac.model.UserAccount;
 import system_pac.repository.UserRepository;
-
+@Service
 public class UserServiceImpI implements UserService{
 
     private final UserRepository userRepository;
