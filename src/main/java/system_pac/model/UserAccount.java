@@ -37,4 +37,8 @@ public class UserAccount {
     private String surname;
     private Integer shift;
     private List<QuestionPosts> questionPosts;
+
+    public void addQuest(UserAccount userAccount) {
+
+    }
 }

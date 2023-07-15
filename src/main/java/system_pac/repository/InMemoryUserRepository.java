@@ -16,7 +16,7 @@ public class InMemoryUserRepository implements UserRepository{
     }
 
     @Override
-    public UserAccount getById(long id) {
+    public UserAccount getById(Long id) {
         return accountMap.get(id);
     }
 }
