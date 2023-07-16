@@ -4,20 +4,21 @@ import javax.xml.crypto.Data;
 import java.util.Date;
 
 public class QuestionPosts {
-    String question;
-    String answer;
+    String question_text;
+    QuestionPosts post;
     UserAccount account;
     Date date;
 
-    public QuestionPosts(String question, String answer, /*UserAccount account,*/ Date date) {
-        this.question = question;
-        this.answer = answer;
-     /*   this.account = account;*/
+    public QuestionPosts(String question_text, Date date) {
+        this.question_text = question_text;
         this.date = date;
     }
 
-    public String getAnswer() {
-        return answer;
+    public QuestionPosts(){
+    }
+
+    public  void createPost(){
+        post = new QuestionPosts();
     }
 
     public UserAccount getAccount() {

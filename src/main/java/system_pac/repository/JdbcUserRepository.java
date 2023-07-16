@@ -55,7 +55,7 @@ public class JdbcUserRepository implements UserRepository{
                     String questionAnswer = rs.getString(7);
                     Date questionDate = rs.getDate(8);
 
-                    QuestionPosts  questionPosts = new QuestionPosts(questionQuestion, questionAnswer, questionDate);
+                    QuestionPosts  questionPosts = new QuestionPosts(questionQuestion, questionDate);
 
                     result.get(userId).addQuest(userAccount);
                 }
